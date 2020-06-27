@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8"/>
+  <link rel="shortcut icon" type="favicon.ico" href="images/favicon.ico" />
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+  <title>Conc Rock</title>
+
+  <link href='//fonts.googleapis.com/css?family=Noto+Sans:400,700,400italic,700italic'
+        rel='stylesheet' type='text/css'>
+  <link href='//fonts.googleapis.com/css?family=Libre+Baskerville:700'
+        rel='stylesheet' type='text/css'>
+
+  <script type="module" src="src/js/stat-block.js"></script>
+  <script type="module" src="src/js/creature-heading.js"></script>
+  <script type="module" src="src/js/top-stats.js"></script>
+  <script type="module" src="src/js/abilities-block.js"></script>
+  <script type="module" src="src/js/property-line.js"></script>
+  <script type="module" src="src/js/property-block.js"></script>
+
+  <style>
+    body {
+      margin: 0;
+    }
+
+    stat-block {
+      /* A bit of margin for presentation purposes, to show off the drop
+      shadow. */
+      margin-left: 20px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <stat-block>
+    <creature-heading>
+      <h1>Conc Rock</h1>
+      <h2>Tiny construct, unaligned</h2>
+    </creature-heading>
+
+    <top-stats>
+      <property-line>
+        <h4>Armor Class</h4>
+        <p>17</p>
+      </property-line>
+      <property-line>
+        <h4>Hit Points</h4>
+        <p>5 (2d4)</p>
+      </property-line>
+      <property-line>
+        <h4>Speed</h4>
+        <p>0 ft.</p>
+      </property-line>
+
+      <abilities-block data-str="0"
+                       data-dex="0"
+                       data-con="10"
+                       data-int="16"
+                       data-wis="16"
+                       data-cha="10"></abilities-block>
+
+      <property-line>
+        <h4>Saving Throws</h4>
+        <p>Con +2, Int +5, Wis +5, Cha +2</p>
+      </property-line>
+      <property-line>
+        <h4>Skills</h4>
+        <p>Insight +5, Perception +5</p>
+      </property-line>
+      <property-line>
+        <h4>Damage Immunities</h4>
+        <p> poison, psychic; bludgeoning, piercing, and slashing from nonmagical attacks that aren't adamantine</p>
+      </property-line>
+      <property-line>
+        <h4>Condition Immunities</h4>
+        <p> blinded, charmed, deafened, exhaustion, frightened, paralyzed, petrified, poisoned, stunned, unconscious</p>
+      </property-line>
+      <property-line>
+        <h4>Senses</h4>
+        <p>blindsight 120 ft. (blind and deaf beyond this radius), passive Perception 15</p>
+      </property-line>
+      <property-line>
+        <h4>Languages</h4>
+        <p>understands the languages of its master but can't speak</p>
+      </property-line>
+      <property-line>
+        <h4>Challenge</h4>
+        <p>0 (0 or 10 XP)</p>
+      </property-line>
+    </top-stats>
+
+    <property-block>
+      <h4>Immobile.</h4>
+      <p>The conc rock can’t move or speak. It automatically fails Strength and Dexterity checks and Saving Throws.</p>
+    </property-block>
+    <property-block>
+      <h4>Avoidance.</h4>
+      <p>If the conc rock is subjected to an effect that allows it to make a saving throw to take only half damage, it instead takes no damage if it succeeds on the saving throw, and only half damage if it fails.</p>
+    </property-block>
+    <property-block>
+      <h4>Immutable Form.</h4>
+      <p>The conc rock is immune to any spell or effect that would alter its form.</p>
+    </property-block>
+    <property-block>
+      <h4>Constructed Nature.</h4>
+      <p>A conc rock does not require air, food, drink, or sleep. If the conc rock drops to 0 hit points, its body disintegrates into dust. A destroyed conc rock can only be restored using <i>true resurrection</i>, <i>wish</i>, or similar effects.</p>
+    </property-block>
+  </stat-block>
+</body>
+</html>
